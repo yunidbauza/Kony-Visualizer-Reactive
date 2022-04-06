@@ -1,0 +1,52 @@
+{
+    "HEAD": "w95f2ba4c30b48f58fb72d96de9a3e0d",
+    "w3c2d1c50aae4ee09400f3782819fcc4": {
+        "extension": "html",
+        "kuid": "w3c2d1c50aae4ee09400f3782819fcc4",
+        "name": "index.html",
+        "parent": "w838e32bc8c841dfa06af878937502f8",
+        "type": "F"
+    },
+    "w838e32bc8c841dfa06af878937502f8": {
+        "children": [
+            "w3c2d1c50aae4ee09400f3782819fcc4",
+            "wcd3cdc6c3b04ad0a44b3a859bf054f4"
+        ],
+        "kuid": "w838e32bc8c841dfa06af878937502f8",
+        "name": "apexcharts",
+        "parent": "w95f2ba4c30b48f58fb72d96de9a3e0d",
+        "type": "D"
+    },
+    "w95f2ba4c30b48f58fb72d96de9a3e0d": {
+        "children": [
+            "w838e32bc8c841dfa06af878937502f8"
+        ],
+        "kuid": "w95f2ba4c30b48f58fb72d96de9a3e0d",
+        "name": "localfiles",
+        "type": "L"
+    },
+    "wbdf50b402944b19a0c4440ff8cf55b3": {
+        "extension": "js",
+        "kuid": "wbdf50b402944b19a0c4440ff8cf55b3",
+        "name": "apexcharts.js",
+        "parent": "wcd3cdc6c3b04ad0a44b3a859bf054f4",
+        "type": "F"
+    },
+    "wcd3cdc6c3b04ad0a44b3a859bf054f4": {
+        "children": [
+            "wbdf50b402944b19a0c4440ff8cf55b3",
+            "wff73dd727884f53a501345291e1e9a5"
+        ],
+        "kuid": "wcd3cdc6c3b04ad0a44b3a859bf054f4",
+        "name": "lib",
+        "parent": "w838e32bc8c841dfa06af878937502f8",
+        "type": "D"
+    },
+    "wff73dd727884f53a501345291e1e9a5": {
+        "extension": "js",
+        "kuid": "wff73dd727884f53a501345291e1e9a5",
+        "name": "area-chart.js",
+        "parent": "wcd3cdc6c3b04ad0a44b3a859bf054f4",
+        "type": "F"
+    }
+}

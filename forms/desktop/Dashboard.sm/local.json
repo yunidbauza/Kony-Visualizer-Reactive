@@ -1,0 +1,56 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "160dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s65a9ba7cdeb4515b7281da4e2d0815a",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "310dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "tileType": "Local Rank"
+    },
+    "id": "local",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "a53e731b83404d10b6f09e2af3f1288e",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "row3",
+    "pf": "Dashboard",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "e9a7f8f7930b4a69b3bf08dfbff8db7b",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

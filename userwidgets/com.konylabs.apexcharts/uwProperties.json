@@ -1,0 +1,81 @@
+{
+    "classname": "apexcharts",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "i54d22c1486c46e59ab4d0aa6eec56b8",
+                    "paramList": [],
+                    "propertyKey": "render",
+                    "pw": {
+                        "displayName": "render",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "i0ec3be8a675448daa8ae8cc2070973c",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "area",
+                    "group": "General",
+                    "kuid": "c451f81f90384e9798d2c000d583276a",
+                    "originalPropertyKey": "chartType",
+                    "propertyIndex": 1,
+                    "propertyKey": "chartType",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Chart Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "i0ec3be8a675448daa8ae8cc2070973c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": 200,
+                    "group": "General",
+                    "kuid": "e61a8f0c56f94ba8a9c788c0f413c89f",
+                    "originalPropertyKey": "chartHeight",
+                    "propertyIndex": 2,
+                    "propertyKey": "chartHeight",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Height",
+                        "type": "integer",
+                        "uiRepresentation": "Label-Textbox",
+                        "validationData": "^(\\+|-)?\\d+$"
+                    },
+                    "srcWgtKUID": "i0ec3be8a675448daa8ae8cc2070973c",
+                    "type": "integer",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.konylabs",
+    "version": "1.0.0"
+}

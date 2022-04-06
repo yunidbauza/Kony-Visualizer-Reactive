@@ -1,0 +1,100 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRadio",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        1,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_skin_": "sb7624fbc6f447998f22f01951a621f1",
+    "_top_": {
+        "type": "string",
+        "value": "44dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "680dp"
+    },
+    "android": {
+        "psp": {
+            "viewType": 0
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "groupcells": false,
+    "id": "mySites",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "viewType": 0
+        }
+    },
+    "iphone": {
+        "psp": {
+            "viewType": 0
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "itemorientation": "horizontal",
+    "kuid": "i9b8e935a0bc4dda8ddfc335ceed26f0",
+    "masterdata": [
+        [
+            "rbg1",
+            "pastaplace.com"
+        ],
+        [
+            "rbg2",
+            "dumb-robot.com"
+        ],
+        [
+            "rbg3",
+            "funnymovies.tv"
+        ],
+        [
+            "rbg4",
+            "manatee.org"
+        ],
+        [
+            "rbg5",
+            "greatdane.net"
+        ]
+    ],
+    "name": "kony.ui.RadioButtonGroup",
+    "paddinginpixel": false,
+    "parent": "flxHeadeer",
+    "pf": "Dashboard",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "selectedkey": "rbg1",
+    "selectedkeyvalue": [
+        "rbg1",
+        "pastaplace.com"
+    ],
+    "size": 18,
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "RadioButtonGroup",
+    "widgetalignment": 5,
+    "zindex": 1
+}
