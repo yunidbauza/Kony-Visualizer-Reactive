@@ -26,7 +26,7 @@ This sample consists in a single Form with multiple components that refresh seem
     │   │   ├── PubSub.js               # Publisher/Subscriber class
     │   │   ├── Store.js                # Store class
     │   └── demodata.js                 # Functions that generate dummy data
-    │   └── inmutable.js                # Util library to generate inmutable objects copies
+    │   └── immutable.js                # Util library to generate immutable objects copies
     ├── userwidgets                    
     │   ├── com.konylabs.apexcharts     # Chart component
     │   ├── com.konylabs.tile           # Summary Tile component
