@@ -94,6 +94,6 @@ define('App', function () {
         Summary: Summary,
         SEO: SEO,
         Competitors: Competitors,
-        YearlySummary
+        YearlySummary: YearlySummary
     };
 });
