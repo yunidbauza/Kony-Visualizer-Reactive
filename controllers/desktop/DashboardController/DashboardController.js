@@ -17,7 +17,7 @@ define({
         this.view.imgCompRefresh.src = "refresh.svg";
         
         // Mock data population with a timer on the live Summary section
-        // and set somo initial data for Competitors and SEO data sections
+        // and set some initial data for Competitors and SEO data sections
         kony.timer.schedule("livesummarydatarefresh", this.onSummaryDataRefresh, 3, true);
         kony.timer.schedule("compdatarefresh",this.onCompetitorsRefresh, 0, false);
         kony.timer.schedule("seodatarefresh",this.onSEODataRefresh, 0, false);
