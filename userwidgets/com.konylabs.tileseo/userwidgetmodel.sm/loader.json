@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "160dp"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
@@ -22,7 +22,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sb11e563216c437087c32d30696464f4",
+    "_skin_": "s543d812f7a74d8c9c37cc2df5aa3114",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -35,20 +35,19 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "cnt",
-        "loader"
+        "Image0fe1d53be1cd048"
     ],
     "clipbounds": false,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "tileseo",
+    "id": "loader",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": true,
-    "kuid": "e9a7f8f7930b4a69b3bf08dfbff8db7b",
+    "isvisible": false,
+    "kuid": "d8135f12de154bd982bf32d4704c5ad1",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "userwidgetmodel",
+    "parent": "tileseo",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

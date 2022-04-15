@@ -33,7 +33,7 @@ define('App', function () {
 
         render() {
             this.element.forEach(i => {
-                i.setData(store.state.summary[i.id]);
+                i.setData(store.state.summary.data[i.id]);
             });
         }
     }
@@ -48,7 +48,7 @@ define('App', function () {
 
         render() {
             this.element.forEach(i => {
-                i.setData(store.state.selected, store.state.seo[i.id]);
+                i.setData(store.state.selected, store.state.seo.data[i.id], store.state.seo.isSEOLoading);
             });
         }
     }
@@ -62,14 +62,23 @@ define('App', function () {
         }
 
         render() {
-            this.element.removeAll();
-            this.element.widgetDataMap = {
+            let sgm = this.element.widgets()[0];
+            let loader = this.element.widgets()[1];
+            if (store.state.competitors.isCompetitorsLoading) {
+                loader.isVisible = true;
+                return;
+            } else {
+                loader.isVisible = false;
+            }
+            
+            sgm.removeAll();
+            sgm.widgetDataMap = {
                 lbCompetitor: "site",
                 lbKeywords: "keywords",
                 lbPosition: "position",
                 lbTraffic: "traffic"
             };
-            this.element.setData(store.state.competitors);
+            sgm.setData(store.state.competitors.data);
         }
     }
     
@@ -84,9 +93,9 @@ define('App', function () {
         render() {
             let labels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
             this.element.render({
-                values: store.state.yearlySummary,
+                values: store.state.yearlySummary.data,
                 labels: labels
-            });
+            }, store.state.yearlySummary.isYearlySummaryLoading);
         }
     }
     

@@ -36,7 +36,13 @@ define(function() {
             });
         },
         
-        render: function(data) {
+        render: function(data, isLoading = false) {
+            if (isLoading) {
+                this.view.loader.isVisible = true;
+                return;
+            } else {
+                this.view.loader.isVisible = false;
+            }
             if (!this._isReady) {
                 kony.timer.schedule("delayedChartLoading000", () => { return this.render(data); }, 1, true) ;
                 return false;

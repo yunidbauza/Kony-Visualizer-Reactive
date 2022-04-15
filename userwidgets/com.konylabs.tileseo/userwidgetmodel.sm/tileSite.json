@@ -57,7 +57,7 @@
     "isvisible": true,
     "kuid": "a83a064f474446febfb3bbdab3b830d9",
     "name": "kony.ui.Label",
-    "parent": "tileseo",
+    "parent": "cnt",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

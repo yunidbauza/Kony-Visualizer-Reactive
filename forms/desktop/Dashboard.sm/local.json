@@ -35,9 +35,7 @@
     },
     "canUpdateUI": true,
     "containerweight": 0,
-    "data": {
-        "tileType": "Local Rank"
-    },
+    "data": {},
     "id": "local",
     "info": null,
     "iscustomlayout": false,

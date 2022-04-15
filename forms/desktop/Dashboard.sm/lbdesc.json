@@ -22,7 +22,7 @@
         0
     ],
     "_skin_": "s8d949a371994399bf0d5d1410d57ec0",
-    "_text_": "(live stats for sthe selected site will refresh every 3 seconds)",
+    "_text_": "(live stats for sthe selected site will refresh every 2 seconds)",
     "_top_": {
         "type": "string",
         "value": "31dp"

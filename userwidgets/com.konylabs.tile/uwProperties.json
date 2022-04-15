@@ -32,29 +32,7 @@
         },
         "properties": {
             "custom": [],
-            "passthrough": [
-                {
-                    "access": "Enable",
-                    "group": "General",
-                    "kuid": "bcdf6f1cc7a540feae4ec8787aecede6",
-                    "originalPropertyKey": "text",
-                    "propertyIndex": 1,
-                    "propertyKey": "tileType",
-                    "pw": {
-                        "access": "readwrite",
-                        "category": "look",
-                        "dependencyConditions": {},
-                        "dependentKeysKUIDs": null,
-                        "displayName": "Name",
-                        "isHiddenInTool": false,
-                        "srcWidget": "tileType",
-                        "type": "string",
-                        "uiRepresentation": "Label-Textbox",
-                        "wType": "Label"
-                    },
-                    "srcWgtKUID": "d580e0c44129436a847ad17fc2c7bb7d"
-                }
-            ]
+            "passthrough": []
         },
         "widgets": {
             "expose": [],

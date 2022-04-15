@@ -50,7 +50,7 @@
     "kuid": "f4b6bed7317248f3947189adc359ed6e",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "tileseo",
+    "parent": "cnt",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

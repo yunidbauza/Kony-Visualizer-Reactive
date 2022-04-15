@@ -37,7 +37,7 @@
     "children": [
         "FlexContainer0facaff799d484d",
         "flxCompHeaderbar",
-        "sgCompetitors"
+        "flxCmp"
     ],
     "clipbounds": false,
     "containerweight": 100,

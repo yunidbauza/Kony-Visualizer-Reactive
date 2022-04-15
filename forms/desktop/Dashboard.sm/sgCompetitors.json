@@ -83,7 +83,7 @@
     "paginationconfig": {
         "position": "bottom"
     },
-    "parent": "flxCompetitors",
+    "parent": "flxCmp",
     "pf": "Dashboard",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

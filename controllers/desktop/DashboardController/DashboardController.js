@@ -2,15 +2,16 @@ define({
     onInit: function(){
         // Create a new instance of the App and initialize th differenc components
         var App = require('App');
+        var AppServices = require('AppServices');
         
+        this._service = new AppServices.Service();
         this._summary = new App.Summary(this.view.flxSummaryBlock.widgets()); 
         this._seo = new App.SEO([
             this.view.backlink, this.view.external, this.view.local, this.view.global
         ]);
-        this._competitors = new App.Competitors(this.view.sgCompetitors);
+        this._competitors = new App.Competitors(this.view.flxCmp);
         this._yearlySummary = new App.YearlySummary(this.view.apexcharts);
-        
-        
+
         // Initialize events
         this.view.mySites.onSelection = this.onSiteSelectChange;
         this.view.btnCompRefresh.onClick = this.onCompetitorsRefresh;
@@ -18,7 +19,7 @@ define({
         
         // Mock data population with a timer on the live Summary section
         // and set some initial data for Competitors and SEO data sections
-        kony.timer.schedule("livesummarydatarefresh", this.onSummaryDataRefresh, 3, true);
+        kony.timer.schedule("livesummarydatarefresh", this.onSummaryDataRefresh, 2, true);
         kony.timer.schedule("compdatarefresh",this.onCompetitorsRefresh, 0, false);
         kony.timer.schedule("seodatarefresh",this.onSEODataRefresh, 0, false);
     },
@@ -26,22 +27,31 @@ define({
     onSiteSelectChange: function(){
         this.onSEODataRefresh();
         this.onCompetitorsRefresh();
-        this.onSummaryDataRefresh();
     },
     
-    onSummaryDataRefresh: function() {
+    onSummaryDataRefresh: async function() {
         // Dispatch a liveSummaryUpdate action
-        store.dispatch('liveSummaryUpdate', demo.liveSummaryPayload());
+        let data = await this._service.callIntSvc(CONST.INTSVC_LIVE_SUMMARY, CONST.OP_GET_LIVE_SUMMARY);
+        store.dispatch('liveSummaryUpdate', data);
     },
     
-    onCompetitorsRefresh: function() {
+    onCompetitorsRefresh: async function() {
+        store.dispatch('isCompetitorsLoading', true);
         // Dispatch a compUpdate action
-        store.dispatch('compUpdate', demo.compPayload());
+        let data = await this._service.getDataObject(CONST.OBJ_COMPETITOR);
+        store.dispatch('compUpdate', data);
     },
     
     onSEODataRefresh: function() {
+        store.dispatch('isSEOLoading', true);
+        store.dispatch('isYearlySummaryLoading', true);
         // Dispatch a seoUpdate and a yearlySummaryUpdate actions
-        store.dispatch('seoUpdate', demo.seoPayload(this.view.mySites.selectedKeyValue[1]));
-        store.dispatch('yearlySummaryUpdate', demo.yearlySummaryPayload());
+        Promise.all([
+            this._service.getDataObject(CONST.OBJ_SEO, this.view.mySites.selectedKeyValue[1]),
+            this._service.callIntSvc(CONST.INTSVC_YEARLY_SUMMARY, CONST.OP_GET_YEARLY_SUMMARY)
+        ]).then(results => {
+            store.dispatch('seoUpdate', results[0]);
+            store.dispatch('yearlySummaryUpdate', results[1]);
+        });
     }
  });

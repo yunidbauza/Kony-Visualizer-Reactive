@@ -1,8 +1,12 @@
 {
     "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_height_": {
         "type": "string",
-        "value": "160dp"
+        "value": "490dp"
     },
     "_left_": {
         "type": "string",
@@ -35,21 +39,21 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "cnt",
+        "sgCompetitors",
         "loader"
     ],
     "clipbounds": false,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "tileseo",
+    "id": "flxCmp",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "e9a7f8f7930b4a69b3bf08dfbff8db7b",
+    "kuid": "cc943b93acf542a6a02aaa69591992c3",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "userwidgetmodel",
-    "pf": "userwidgetmodel",
+    "parent": "flxCompetitors",
+    "pf": "Dashboard",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainflowhorizontalalignment": false,

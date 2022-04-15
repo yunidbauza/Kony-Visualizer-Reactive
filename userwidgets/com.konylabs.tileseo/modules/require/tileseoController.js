@@ -23,7 +23,13 @@ define(function() {
          *      ]
          * }
          */
-        setData: function(site, data) {
+        setData: function(site, data, isLoading = false) {
+            if (isLoading) {
+                this.view.loader.isVisible = true;
+                return;
+            } else {
+                this.view.loader.isVisible = false;
+            }
             this.view.tileValue.text = (data.value).toString();
             this.view.tileSite.text = site;
             this.view.site1.text = data.comps[0].site;

@@ -1,5 +1,12 @@
 {
     "HEAD": "d44e90b8afcf44d09aee7b27e5de9248",
+    "a199baecbbb44005876464add1e51ef4": {
+        "extension": "js",
+        "kuid": "a199baecbbb44005876464add1e51ef4",
+        "name": "automationStartup.js",
+        "parent": "jedfc8ab5b1646679851786c19868962",
+        "type": "F"
+    },
     "a516dbce5530410090156af6f064599b": {
         "children": [
             "iab3968101024aad8ef7d0c06a0f7a16"
@@ -41,7 +48,8 @@
         "children": [
             "abdc0d35692841ca8e49744e09b24900",
             "a516dbce5530410090156af6f064599b",
-            "e97656553c2f4824be4aceb7ee10e3a5"
+            "e97656553c2f4824be4aceb7ee10e3a5",
+            "h9b7699687f1472886a431ce39458c9d"
         ],
         "kuid": "b41b9cdd841843679757ad7fe162570b",
         "name": "Mobile",
@@ -71,6 +79,13 @@
         "name": "TestNG",
         "parent": "d44e90b8afcf44d09aee7b27e5de9248",
         "type": "D"
+    },
+    "ca10122594d54481bdda4ed691ef7fad": {
+        "extension": "js",
+        "kuid": "ca10122594d54481bdda4ed691ef7fad",
+        "name": "automationStartup.js",
+        "parent": "e8bec74d605c449d97ea80fde928f51d",
+        "type": "F"
     },
     "cc6eba0ee573489793533bbd4c19237e": {
         "children": [],
@@ -113,7 +128,8 @@
         "children": [
             "ed979a81c0a94b6faf1e975ed926ca43",
             "h301f524b88841f1bf0df6516181db49",
-            "f39116370db94c5eba36491ba8c12bef"
+            "f39116370db94c5eba36491ba8c12bef",
+            "ca10122594d54481bdda4ed691ef7fad"
         ],
         "kuid": "e8bec74d605c449d97ea80fde928f51d",
         "name": "Tablet",
@@ -182,6 +198,13 @@
         "parent": "c06416f018164279b0234a8e3676f028",
         "type": "D"
     },
+    "h9b7699687f1472886a431ce39458c9d": {
+        "extension": "js",
+        "kuid": "h9b7699687f1472886a431ce39458c9d",
+        "name": "automationStartup.js",
+        "parent": "b41b9cdd841843679757ad7fe162570b",
+        "type": "F"
+    },
     "iab3968101024aad8ef7d0c06a0f7a16": {
         "extension": "js",
         "kuid": "iab3968101024aad8ef7d0c06a0f7a16",
@@ -193,7 +216,8 @@
         "children": [
             "d3f3c917884b4717809f8dbeeaf1c4f2",
             "f8b7fdaba2f54b5eb029a7ce9a4c36dc",
-            "ea8499a2573246809cfe6a07157f28b9"
+            "ea8499a2573246809cfe6a07157f28b9",
+            "a199baecbbb44005876464add1e51ef4"
         ],
         "kuid": "jedfc8ab5b1646679851786c19868962",
         "name": "Desktop",

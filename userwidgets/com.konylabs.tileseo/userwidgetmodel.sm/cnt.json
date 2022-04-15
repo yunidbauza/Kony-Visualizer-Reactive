@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "160dp"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
@@ -35,20 +35,22 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "cnt",
-        "loader"
+        "tileType",
+        "tileSite",
+        "tileValue",
+        "FlexContainer0e4a61fcae51b41"
     ],
     "clipbounds": false,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "tileseo",
+    "id": "cnt",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "e9a7f8f7930b4a69b3bf08dfbff8db7b",
+    "kuid": "j6fb61a66524494cb4108bf32388c266",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "userwidgetmodel",
+    "parent": "tileseo",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
