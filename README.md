@@ -2,7 +2,7 @@
 ## Purpose
 <p>
 The main purpose is showcase how to build a simple Reactive app in Kony Viz 9.x, and to structure our code in a much modern way (ES6) while increasing the rehusable code across different channels. <br />
-This sample consists in a single Form with multiple components that refresh seemingly over certain events. It contains a chart, tiles and a segment that react to changes on the data with less that 50 lines of code in the Form Controller.  
+This sample consists in a single Form with multiple components that refresh seemingly over certain events. It contains a chart, tiles and a segment that react to changes on the data with less that 60 lines of code in the Form Controller.  
 </p>
 <p align="center"><img src="Reactive-Viz-sample.gif" width="400" ></p>
 
@@ -22,11 +22,13 @@ This sample consists in a single Form with multiple components that refresh seem
     │   │   ├── actionlist.js           # List of actions
     │   │   ├── mutations.js            # Functions that change the state
     │   │   └── root.js                 # Returns an instance of the Store
+    │   ├── Libraries         
+    │   │   ├── immutable.js            # Util library to generate immutable objects copies
+    │   │   └── appservices.js          # Library to serve as a bridge between the app and Kony SDK
     │   ├── StateManagement             
     │   │   ├── PubSub.js               # Publisher/Subscriber class
-    │   │   ├── Store.js                # Store class
+    │   │   └── Store.js                # Store class
     │   └── demodata.js                 # Functions that generate dummy data
-    │   └── immutable.js                # Util library to generate immutable objects copies
     ├── userwidgets                    
     │   ├── com.konylabs.apexcharts     # Chart component
     │   ├── com.konylabs.tile           # Summary Tile component
