@@ -64,12 +64,5 @@ someFunction: function() {
 
 ### Notes
 <p>
-App.js contains all components in a single file, but they could (and they should) be placed on their own files. Visualizer loads the JS modules in alphabetical order and using "require modules" would be the way to go, but the current implementation is not alwasy working as expected for all channels. ES6 capabilities are supported in Visualizer with some exceptions like modules import/export, which would bring a much modern project structuring. 
+App.js contains all components in a single file, but they could (and they should) be placed on their own files. Visualizer loads the JS modules in alphabetical order and using "require modules" would be the way to go, but the current version is not always working as expected for all channels. ES6 capabilities are supported in Visualizer with some exceptions like modules import/export, which would bring a much modern project structuring. 
 </p>
-
-
-
-
-
-
-
