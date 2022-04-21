@@ -92,7 +92,5 @@ define('AppServices', function () {
         }
     }
     
-    return {
-        Service: Service
-    };
+    return new Service();
 });

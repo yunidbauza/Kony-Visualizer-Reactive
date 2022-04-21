@@ -1,10 +1,9 @@
 define({ 
     onInit: function(){
-        // Create a new instance of the App and initialize th differenc components
+        // Create a new instance of the App and initialize the different components
         var App = require('App');
-        var AppServices = require('AppServices');
         
-        this._service = new AppServices.Service();
+        this._service = require('AppServices');
         this._summary = new App.Summary(this.view.flxSummaryBlock.widgets()); 
         this._seo = new App.SEO([
             this.view.backlink, this.view.external, this.view.local, this.view.global
